@@ -1,0 +1,56 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	background-color: #FBFEF9;
+	color: #333333;
+}
+
+.container {
+	width: 800px;
+	text-align: center;
+}
+
+.container h2 {
+	border-bottom: 1px solid #000000;
+	margin-bottom: 30px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.form-control {
+	border-color: #BF1363;
+}
+
+button {
+	margin: 5px auto;
+
+}
+
+.button_glow {
+	background-color: #BF1363;
+	color: #ffffff;
+	border: 0 none;
+	outline: 0 none;
+	border-radius: 5px;
+	padding: 7px 10px;
+	
+	transition: all 0.15s ease-in-out;
+}
+.button_glow:hover {
+	background-color: #F564A9;
+	box-shadow: 0 0 5px #F95738;
+}
+.button_glow:active {
+	box-shadow: 0 0 0 transparent;
+	background-color: #C1ABA6;
+	transition: none;
+}
+
+.button_slide {
+	background-color: #EBEBD3;
+}
