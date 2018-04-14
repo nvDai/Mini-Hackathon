@@ -1,10 +1,14 @@
 const playerSchema = require("../models/playerSchema");
 
-let create = (playerName, callback)=>{
+let create = (name1, name2, name3, name4, callback)=>{
     let newPlayer = {
-        playerName: playerName //giống bên questionSchema.js
+        playerName1: name1, //giống bên questionSchema.js
+        playerName2: name2,
+        playerName3: name3,
+        playerName4: name4
     }
     try {
+        
         playerSchema.create(newPlayer, (err, doc) => {
             //chỉ trả về error nên không cần truyền collection vào
             callback(err, doc);

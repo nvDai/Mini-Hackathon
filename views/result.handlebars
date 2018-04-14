@@ -1,0 +1,66 @@
+<h2>Score Keeper</h2>
+
+    <table>
+        <tr>
+            <td></td>
+            <td>Shounen A</td>
+            <td>Shounen B</td>
+            <td>Shounen C</td>
+            <td>Shounen D</td>
+        </tr>
+        <tr class="sum-of-score">
+            <th>Sum of Score(13)</th>
+            <th>1</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+        </tr>
+        <tr>
+            <td>Round 1</td>
+
+            <td><input type="text" name="" value="1" class="score-box"></td>
+            <td><input type="text" name="" value="4" class="score-box"></td>
+            <td><input type="text" name="" value="6" class="score-box"></td>
+            <td><input type="text" name="" value="1" class="score-box"></td>
+        </tr>
+        {{!-- <tr>
+            <td>Round 2</td>
+
+            <td><input type="text" name="" value="1" class="score-box"></td>
+            <td><input type="text" name="" value="1" class="score-box"></td>
+            <td><input type="text" name="" value="1" class="score-box"></td>
+            <td><input type="text" name="" value="1" class="score-box"></td>
+        </tr>
+        <tr>
+            <td>Round 3</td>
+
+            <td><input type="text" name="" value="1" class="score-box"></td>
+            <td><input type="text" name="" value="1" class="score-box"></td>
+            <td><input type="text" name="" value="1" class="score-box"></td>
+            <td><input type="text" name="" value="1" class="score-box"></td>
+        </tr>
+        <tr>
+            <td>Round 4</td>
+
+            <td><input type="text" name="" value="1" class="score-box"></td>
+            <td><input type="text" name="" value="1" class="score-box"></td>
+            <td><input type="text" name="" value="1" class="score-box"></td>
+            <td><input type="text" name="" value="1" class="score-box"></td>
+        </tr> --}}
+    </table>
+
+<button class="button_glow" style="margin-top: 30px; padding: 7px 30px;">ADD ROUND</button>
+<script>
+    $("button").on("click", ()=> {
+        var element = `
+        <tr>
+            <td>Round</td>
+
+            <td><input type="text" name="" value="" class="score-box"></td>
+            <td><input type="text" name="" value="" class="score-box"></td>
+            <td><input type="text" name="" value="" class="score-box"></td>
+            <td><input type="text" name="" value="" class="score-box"></td>
+        </tr>`;
+        $("table").append(element);
+    })
+</script>

@@ -9,34 +9,85 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="main.js"></script>
+
 </head>
 <body>
 	<div class="container">
-	  <h2>Score Keeper</h2>
-	  
-	  <form>
-	    <div class="form-group">
-	      <input type="text" class="form-control" id="player1" placeholder="Player 1 ...">
-	    </div>
-	    <div class="form-group">
-	      <input type="text" class="form-control" id="player1" placeholder="Player 2 ...">
-	    </div>
-	    <div class="form-group">
-	      <input type="text" class="form-control" id="player1" placeholder="Player 3 ...">
-	    </div>
-	    <div class="form-group">
-	      <input type="text" class="form-control" id="player1" placeholder="Player 4 ...">
-	    </div>
-	    <button class="button_glow">Create a new game</button>
-	  </form>
-	</div>
+		<h2>Score Keeper</h2>
+		<form>
+			<table id="table">
+		  		<tr>
+				    <td></td>
+				    <td>Shounen A</td>
+				    <td>Shounen B</td>
+				    <td>Shounen C</td>
+				    <td>Shounen D</td>
+				</tr>
+				<tr class="sum-of-score">
+				    <th>Sum of Score(13)</th>
+				    <th>1</th>
+				    <th>3</th>
+				    <th>4</th>
+				    <th>5</th>
+				</tr>
+				<tr>
+				    <td>Round 1</td>
 
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				    <td><input type="text" name="" value="2" class="score-box"></td>
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				</tr>
+				<tr>
+				    <td>Round 2</td>
+
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				</tr>
+				<tr>
+				    <td>Round 3</td>
+
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				</tr>
+				<tr>
+				    <td>Round 4</td>
+
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				    <td><input type="text" name="" value="1" class="score-box"></td>
+				</tr>
+			</table>
+			
+		</form>
+		<button class="button_glow" type="submit" style="margin-top: 30px; padding: 7px 30px;">ADD ROUND</button>
+	  
+	</div>
+	<script>
+    $("button").on("click", ()=> {
+        var element = `
+        <tr>
+            <td>Round 2</td>
+
+            <td><input type="text" name="" value="1" class="score-box"></td>
+            <td><input type="text" name="" value="1" class="score-box"></td>
+            <td><input type="text" name="" value="1" class="score-box"></td>
+            <td><input type="text" name="" value="1" class="score-box"></td>
+        </tr>`;
+        $("#table").append(element);
+    })
+</script>
 	
 </body>
 </html>
